@@ -1,13 +1,38 @@
 <!doctype html>
 <html>
   <head>
-    <title>饿哦及</title>
+    <title>145465</title>
     <script></script>
   </head>
+  <style>
+    body{
+      background: rgba(100,145,250,0.3);
+    }
+    #canvas{
+      padding: 0;
+      margin-left: 20px;
+      margin-right: 0;
+      margin-bottom: 20px;
+      border:thin solid #aaaaaa; 
+      cursor:crosshair;
+    }
+    #controls{
+      margin:20px 0 20px 20px;
+    }
+    #rubberbandDiv{
+      position: absolute;
+      border:3px solid blue;
+      cursor: crosshair;
+      display: none;
+    }
+
+  </style>
   <body>
-    <div >
-      <canvas id="clock"></canvas>
+    <img id="img1" hidden="hidden"  src='https://pic4.zhimg.com/v2-3be05963f5f3753a8cb75b6692154d4a_1440w.jpg'>
+    <div id='controls'>
+      <input type='button' id='resetButton' value="Reset">
     </div>
+    <div id="rubberbandDiv"></div>
+    <canvas id="canvas" width="800" height="520"></canvas>
   </body>
-  <script src="main.js"></script>
 </html>
